@@ -1,1 +1,177 @@
 @import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+	box-sizing: content-box !important;
+}
+
+@font-face {
+	font-family: 'RuneScape UF';
+	src: url('/fonts/runescape_uf.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	background: black;
+	color: white;
+	font-family: 'RuneScape UF', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: center;
+	margin: 0;
+}
+.page-wrap {
+	background: url('/layout/bg.jpg') repeat-y center top;
+	margin: 0 auto;
+	overflow-y: hidden;
+	padding: 0 50px;
+	width: 815px;
+}
+
+.login-box {
+	background: black;
+	border: 2px solid #382418;
+	display: block;
+	font-size: 1.3em;
+	margin: 10px auto;
+	overflow: hidden;
+	padding: 3px;
+	position: relative;
+	text-align: center;
+	width: 750px;
+}
+
+.login-box__login-link {
+	color: #90c040;
+	cursor: pointer;
+	float: right;
+	margin: 3px;
+}
+
+.banner {
+	background: url('/layout/banner.png') no-repeat center;
+	display: block;
+	margin-bottom: 25px;
+	min-height: 135px;
+	text-align: center;
+}
+
+.home .banner__options {
+	display: none;
+}
+
+.banner__options {
+	background: black;
+	border: 2px solid #382418;
+	display: inline-block;
+	margin-top: 45px;
+	padding: 3px 15px;
+}
+
+.banner__title {
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.left {
+	float: left;
+}
+
+a {
+	color: #90c040;
+	text-decoration: none;
+}
+
+fieldset.menu {
+	border: 2px solid #382418;
+	width: 260px;
+	margin: 0 0 10px 0;
+	display: block;
+	padding: 0 5px 5px 5px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+fieldset {
+	background-color: black;
+	display: block;
+	min-inline-size: min-content;
+	margin-inline: 2px;
+	border-width: 2px;
+	border-style: groove;
+	border-color: threedface;
+	border-image: initial;
+	padding-block: 0.35em 0.625em;
+	padding-inline: 0.75em;
+}
+
+.main {
+	margin-left: 290px;
+	margin-bottom: 110px;
+}
+
+img.narrowscroll-top {
+	position: relative;
+	top: 25px;
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+	display: block;
+}
+
+img.narrowscroll-bottom {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	top: -25px;
+	display: block;
+}
+
+div.narrowscroll-bg {
+	width: 447px;
+	background-color: #c2ab79;
+	margin-left: 10px;
+}
+
+div.narrowscroll-bgimg {
+	width: 457px;
+	position: relative;
+	margin: 0 -5px;
+	background-image: url('/layout/scroll-bg.gif');
+	background-repeat: repeat-y;
+}
+
+div.narrowscroll-content {
+	padding: 25px 10px;
+	color: #000000;
+	position: relative;
+	margin: 0 5px;
+}
+
+div.widescroll-content a,
+div.horizontalscroll-content a,
+div.narrowscroll-content a {
+	color: #7b4f17;
+	font-weight: bold;
+}
+
+.scroll {
+	color: black;
+}
+
+.right {
+	text-align: right;
+}
+
+.news dt {
+	font-weight: bold;
+	clear: right;
+}
+
+dt {
+	display: block;
+	unicode-bidi: isolate;
+}
