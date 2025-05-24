@@ -20,7 +20,7 @@
 						<img src="layout/recent-news.gif" alt="Recent News" />
 					</dt>
 					<dt>&nbsp;</dt>
-					<dt><span class="newsdate">01-Feb-2007</span>Behind the Scenes - February</dt>
+					<dt><span class="newsdate">23-May-2025</span>I made a website. Yipee!</dt>
 					<dd>
 						<table width="100%">
 							<tbody

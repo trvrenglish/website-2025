@@ -6,6 +6,14 @@
 	box-sizing: content-box !important;
 }
 
+img,
+video {
+	max-width: none !important;
+}
+
+img {
+	display: inline !important;
+}
 @font-face {
 	font-family: 'RuneScape UF';
 	src: url('/fonts/runescape_uf.ttf') format('truetype');
@@ -17,10 +25,18 @@ body {
 	background: black;
 	color: white;
 	font-family: 'RuneScape UF', Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	text-align: center;
 	margin: 0;
 }
+
+div#body {
+	width: 765px;
+	margin: 10px auto 10px auto;
+	text-align: left;
+	position: relative;
+}
+
 .page-wrap {
 	background: url('/layout/bg.jpg') repeat-y center top;
 	margin: 0 auto;
@@ -108,6 +124,11 @@ fieldset {
 	padding-inline: 0.75em;
 }
 
+fieldset.menu ul li {
+	list-style: square inside;
+	width: 220px;
+}
+
 .main {
 	margin-left: 290px;
 	margin-bottom: 110px;
@@ -171,7 +192,24 @@ div.narrowscroll-content a {
 	clear: right;
 }
 
+.newsdate {
+	float: right;
+}
+
 dt {
 	display: block;
 	unicode-bidi: isolate;
+}
+
+dl {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	unicode-bidi: isolate;
+}
+
+legend {
+	display: block;
+	unicode-bidi: isolate;
+	padding-inline: 2px;
 }
