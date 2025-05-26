@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Main from '$lib/components/layout/Main.svelte';
+	import Nav from '$lib/components/layout/nav/Nav.svelte';
+</script>
+
+<Nav />
+<Main />
+<p>
+	Assets from <a href="https://svelte.dev/docs/kit">Old School Runescape by Jagex</a>
+</p>

@@ -1,1 +1,7 @@
-<span class="login-box"><a id="showOsLogin" class="login-box__login-link">Log in</a></span>
+<span class="login-box">
+	<div class="marquee glow1">
+		<span>Thank you for visiting! Please let me know what you think of my website :)</span>
+		<span>Thank you for visiting! Please let me know what you think of my website :)</span>
+		<span></span>
+	</div>
+</span>

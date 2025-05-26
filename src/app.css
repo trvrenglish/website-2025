@@ -14,9 +14,26 @@ video {
 img {
 	display: inline !important;
 }
+
+body,
+html {
+	cursor: url('icons/cursors/cursor.cur'), auto;
+}
+
+a {
+	cursor: url('icons/cursors/pointer.cur'), auto;
+}
+
 @font-face {
 	font-family: 'RuneScape UF';
 	src: url('/fonts/runescape_uf.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RuneScape Quill';
+	src: url('/fonts/runescape_quill.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -46,6 +63,7 @@ div#body {
 }
 
 .login-box {
+	cursor: url('icons/cursors/party-hat.cur'), auto;
 	background: black;
 	border: 2px solid #382418;
 	display: block;
@@ -66,9 +84,8 @@ div#body {
 }
 
 .banner {
-	background: url('/layout/banner.png') no-repeat center;
+	background: url('/layout/banner.gif') no-repeat center;
 	display: block;
-	margin-bottom: 25px;
 	min-height: 135px;
 	text-align: center;
 }
@@ -129,6 +146,11 @@ fieldset.menu ul li {
 	width: 220px;
 }
 
+fieldset.menu ul li img {
+	height: 16px;
+	width: 19px;
+}
+
 .main {
 	margin-left: 290px;
 	margin-bottom: 110px;
@@ -169,7 +191,7 @@ div.narrowscroll-content {
 	padding: 25px 10px;
 	color: #000000;
 	position: relative;
-	margin: 0 5px;
+	margin: 0 14px;
 }
 
 div.widescroll-content a,
@@ -180,15 +202,18 @@ div.narrowscroll-content a {
 }
 
 .scroll {
-	color: black;
+	color: #635537;
 }
 
-.right {
+. .right {
 	text-align: right;
 }
 
-.news dt {
-	font-weight: bold;
+.news-title {
+	font-family: 'RuneScape Quill', Arial, Helvetica, sans-serif;
+	font-size: 34px;
+	line-height: normal;
+	margin-bottom: 8px;
 	clear: right;
 }
 
@@ -212,4 +237,44 @@ legend {
 	display: block;
 	unicode-bidi: isolate;
 	padding-inline: 2px;
+}
+
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.marquee span {
+	display: inline-block;
+	padding-left: 100%;
+	animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.glow1 {
+	animation: glow1 3s linear infinite;
+}
+
+@keyframes glow1 {
+	0% {
+		color: #ff0000;
+	}
+	33% {
+		color: #00b000;
+	}
+	66% {
+		color: #0000ff;
+	}
+	100% {
+		color: #ff0000;
+	}
 }
