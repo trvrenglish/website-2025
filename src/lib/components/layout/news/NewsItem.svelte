@@ -23,6 +23,6 @@
 		>
 	</table>
 	<div style="margin-top: 0.5em;">
-		<a href={newsItem.url}>Read more...</a>
+		<a href={newsItem.url}>{newsItem.ctaText}</a>
 	</div>
 </dd>

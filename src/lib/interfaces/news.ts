@@ -6,4 +6,5 @@ export interface NewsItem {
 	iconAlt: string;
 	text: string;
 	url: string;
+	ctaText: string;
 }
