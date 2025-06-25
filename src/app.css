@@ -17,11 +17,11 @@ img {
 
 body,
 html {
-	cursor: url('icons/cursors/cursor.cur'), auto;
+	cursor: url('/icons/cursors/cursor.cur'), auto;
 }
 
 a {
-	cursor: url('icons/cursors/pointer.cur'), auto;
+	cursor: url('/icons/cursors/pointer.cur'), auto;
 }
 
 @font-face {
