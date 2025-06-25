@@ -41,13 +41,13 @@ export const navItems: NavItem[] = [
 				id: 1,
 				title: 'Skills',
 				icon: '/icons/skills.gif',
-				url: '/'
+				page: 'skills'
 			},
 			{
 				id: 2,
 				title: 'Contact',
 				icon: '/icons/email.gif',
-				url: '/'
+				page: 'contact'
 			}
 		]
 	},
@@ -77,9 +77,9 @@ export const navItems: NavItem[] = [
 			},
 			{
 				id: 2,
-				title: 'Something else',
+				title: "My friends' websites",
 				icon: '/icons/questionmark.gif',
-				url: '/'
+				page: 'friends'
 			}
 		]
 	}

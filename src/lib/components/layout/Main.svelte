@@ -1,6 +1,12 @@
 <script>
 	import NewsItem from '$lib/components/layout/news/NewsItem.svelte';
-	import { newsItems } from '$lib/data/news';
+	import { newsItems } from '$lib/data/main.svelte';
+	import { getCurrentPage } from '$lib/utils/page.svelte';
+	import Contact from '../Contact.svelte';
+	import Friends from '../Friends.svelte';
+	import Skills from '../Skills.svelte';
+
+	let currentPage = $derived(getCurrentPage());
 </script>
 
 <div class="main">
@@ -21,13 +27,27 @@
 		<div class="narrowscroll-bgimg">
 			<div class="narrowscroll-content">
 				<dl class="news scroll">
-					<dt style="text-align: center;">
-						<img src="layout/recent-news.gif" alt="Recent News" />
-					</dt>
-					<dt>&nbsp;</dt>
-					{#each newsItems as newsItem (newsItem.id)}
-						<NewsItem {newsItem} />
-					{/each}
+					{#if currentPage === 'news'}
+						<dt style="text-align: center;">
+							<img src="layout/recent-news.gif" alt="Recent News" />
+						</dt>
+						<dt>&nbsp;</dt>
+						{#each newsItems as newsItem (newsItem.id)}
+							<NewsItem {newsItem} />
+						{/each}
+						<div class="right" style="margin-bottom: 0.5em">
+							<a
+								href="https://web.archive.org/web/20070205110736/http://news.runescape.com/lang/en/aff/runescape/list.ws"
+								>Browse the news archives</a
+							>
+						</div>
+					{:else if currentPage === 'skills'}
+						<Skills />
+					{:else if currentPage === 'contact'}
+						<Contact />
+					{:else if currentPage === 'friends'}
+						<Friends />
+					{/if}
 					<!-- <dt><span class="newsdate">23-May-2025</span>I made a website. Yipee!</dt> -->
 					<!-- <dd> -->
 					<!-- 	<table width="100%"> -->
@@ -173,12 +193,6 @@
 					<!-- 	</div> -->
 					<!-- </dd> -->
 				</dl>
-				<div class="right" style="margin-bottom: 0.5em">
-					<a
-						href="https://web.archive.org/web/20070205110736/http://news.runescape.com/lang/en/aff/runescape/list.ws"
-						>Browse the news archives</a
-					>
-				</div>
 			</div>
 		</div>
 	</div>

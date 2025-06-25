@@ -201,6 +201,21 @@ div.narrowscroll-content a {
 	font-weight: bold;
 }
 
+div.skills-bgimg {
+	width: 204px;
+	height: 275px;
+	position: relative;
+	margin: 0 -5px;
+	background-image: url('/layout/skills.png');
+	background-repeat: repeat-y;
+}
+
+div.skills-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
 .scroll {
 	color: #635537;
 }
@@ -276,5 +291,45 @@ legend {
 	}
 	100% {
 		color: #ff0000;
+	}
+}
+
+@media (max-width: 768px) {
+	.left {
+		float: none;
+	}
+
+	.main {
+		margin-left: auto;
+	}
+
+	fieldset.menu {
+		width: auto;
+	}
+
+	.narrowscroll-top {
+		width: 100%;
+	}
+
+	div.narrowscroll-bg {
+		width: 97%;
+	}
+
+	div.narrowscroll-bgimg {
+		width: 102%;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	div.narrowscroll-content {
+		width: 93.5%;
+	}
+
+	.narrowscroll-bottom {
+		width: 100%;
+	}
+
+	body {
+		font-size: 20px;
 	}
 }

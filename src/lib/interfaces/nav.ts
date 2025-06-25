@@ -9,5 +9,6 @@ export interface NavLink {
 	id: number;
 	title: string;
 	icon: string;
-	url: string;
+	url?: string;
+	page?: string;
 }
