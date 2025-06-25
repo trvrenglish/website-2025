@@ -39,7 +39,6 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "gh-pages -d build -t",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -52,6 +51,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"gh-pages": "^6.3.0"
+		"@sveltejs/adapter-vercel": "^5.7.2"
 	}
 }
