@@ -4,6 +4,7 @@
 	import { getCurrentPage } from '$lib/utils/page.svelte';
 	import Contact from '../Contact.svelte';
 	import Friends from '../Friends.svelte';
+	import Recipes from '../Recipes.svelte';
 	import Skills from '../Skills.svelte';
 
 	let currentPage = $derived(getCurrentPage());
@@ -47,6 +48,8 @@
 						<Contact />
 					{:else if currentPage === 'friends'}
 						<Friends />
+					{:else if currentPage === 'recipes'}
+						<Recipes />
 					{/if}
 					<!-- <dt><span class="newsdate">23-May-2025</span>I made a website. Yipee!</dt> -->
 					<!-- <dd> -->
