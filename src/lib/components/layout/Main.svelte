@@ -10,7 +10,7 @@
 	let currentPage = $derived(getCurrentPage());
 </script>
 
-<div class="main">
+<div class="main" id="main">
 	<!-- <div class="buttons"> -->
 	<!-- 	<a -->
 	<!-- 		href="https://web.archive.org/web/20070205110736/https://create.runescape.com/lang/en/aff/runescape/index.html" -->
