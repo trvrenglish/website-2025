@@ -72,7 +72,7 @@ export const navItems: NavItem[] = [
 			{
 				id: 1,
 				title: 'Photography',
-				icon: '/icons/questionmark.gif',
+				icon: '/icons/tealstar.gif',
 				page: 'photography'
 			},
 			{
