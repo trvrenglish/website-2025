@@ -4,6 +4,7 @@
 	import { getCurrentPage } from '$lib/utils/page.svelte';
 	import Contact from '../Contact.svelte';
 	import Friends from '../Friends.svelte';
+	import Photography from '../Photography.svelte';
 	import Recipes from '../Recipes.svelte';
 	import Skills from '../Skills.svelte';
 
@@ -48,6 +49,8 @@
 						<Contact />
 					{:else if currentPage === 'friends'}
 						<Friends />
+					{:else if currentPage === 'photography'}
+						<Photography />
 					{:else if currentPage === 'recipes'}
 						<Recipes />
 					{/if}

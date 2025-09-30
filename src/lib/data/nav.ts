@@ -71,12 +71,18 @@ export const navItems: NavItem[] = [
 		links: [
 			{
 				id: 1,
+				title: 'Photography',
+				icon: '/icons/questionmark.gif',
+				page: 'photography'
+			},
+			{
+				id: 2,
 				title: "My friends' websites",
 				icon: '/icons/questionmark.gif',
 				page: 'friends'
 			},
 			{
-				id: 2,
+				id: 3,
 				title: 'Recipes',
 				icon: '/icons/cooking.gif',
 				page: 'recipes'
