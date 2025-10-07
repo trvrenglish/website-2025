@@ -9,12 +9,26 @@
 	import Photography from '../lib/components/Photography.svelte';
 	import Recipes from '../lib/components/Recipes.svelte';
 	import Skills from '../lib/components/Skills.svelte';
+	import { onMount } from 'svelte';
 
 	let currentPage = $derived(getCurrentPage());
+	let scrollOffset = $derived(0);
+
+	let scrollingTitle = $derived.by(() => {
+		if (!currentPage) return '';
+		return currentPage.substring(scrollOffset) + ' ⚔︎ ' + currentPage.substring(0, scrollOffset);
+	});
+
+	onMount(() => {
+		let interval = setInterval(() => {
+			scrollOffset = (scrollOffset + 1) % currentPage.length;
+		}, 300);
+		return () => clearInterval(interval);
+	});
 </script>
 
 <svelte:head>
-	<title>{currentPage.toUpperCase()} | trvrenglish.com</title>
+	<title>{scrollingTitle} ꧁𓊈𝔗𝔯𝔳𝔯𝔢𝔫𝔤𝔩𝔦𝔰𝔥.𝔠𝔬𝔪𓊉꧂</title>
 </svelte:head>
 
 <div class="left">
