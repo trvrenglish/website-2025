@@ -20,8 +20,7 @@
 			src={img}
 			alt={getAltText(img)}
 			width="100%"
-			style="margin-top:15px; border: 2px solid #635537;
-"
+			style="margin-top:15px; border: 2px solid #635537; background-color: #D5B982; min-height: 200px;"
 		/>
 	{/each}
 	<div style="margin-top: 0.5em;">
