@@ -37,12 +37,12 @@
 						{#each newsItems as newsItem (newsItem.id)}
 							<NewsItem {newsItem} />
 						{/each}
-						<div class="right" style="margin-bottom: 0.5em">
-							<a
-								href="https://web.archive.org/web/20070205110736/http://news.runescape.com/lang/en/aff/runescape/list.ws"
-								>Browse the news archives</a
-							>
-						</div>
+						<!-- <div class="right" style="margin-bottom: 0.5em"> -->
+						<!-- 	<a -->
+						<!-- 		href="https://web.archive.org/web/20070205110736/http://news.runescape.com/lang/en/aff/runescape/list.ws" -->
+						<!-- 		>Browse the news archives</a -->
+						<!-- 	> -->
+						<!-- </div> -->
 					{:else if currentPage === 'skills'}
 						<Skills />
 					{:else if currentPage === 'contact'}
