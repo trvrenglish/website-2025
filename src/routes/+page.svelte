@@ -6,5 +6,5 @@
 <Nav />
 <Main />
 <p>
-	Assets from <a href="https://svelte.dev/docs/kit">Old School Runescape by Jagex</a>
+	Assets from <a href="https://oldschool.runescape.com/">Old School Runescape by Jagex</a>
 </p>
