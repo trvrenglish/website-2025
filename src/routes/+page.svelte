@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>{scrollingTitle} ꧁𓊈𝔗𝔯𝔳𝔯𝔢𝔫𝔤𝔩𝔦𝔰𝔥.𝔠𝔬𝔪𓊉꧂</title>
+	<title>{scrollingTitle} ⁞ 𝔗𝔯𝔳𝔯𝔢𝔫𝔤𝔩𝔦𝔰𝔥.𝔠𝔬𝔪</title>
 </svelte:head>
 
 <div class="left">
