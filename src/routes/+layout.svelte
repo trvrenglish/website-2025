@@ -5,7 +5,16 @@
 	import MusicPlayer from '$lib/components/layout/MusicPlayer.svelte';
 
 	let { children } = $props();
+
+	const images = import.meta.glob('/static/photo/*.jpeg', { as: 'url', eager: true });
+	const imageUrls = Object.values(images).map((url) => url.replace('/static/', '/'));
 </script>
+
+<svelte:head>
+	{#each imageUrls as img (img)}
+		<link rel="preload" as="image" href={img} />
+	{/each}
+</svelte:head>
 
 <div class="page-wrap min-h-screen bg-black text-white">
 	<div id="body">

@@ -14,9 +14,15 @@
 	<span class="newsdate">Updated 09-30-25</span><span class="news-title">Photography</span>
 	<p>Shot on Ricoh GR III</p>
 </dt>
-<dd>
+<dd style="display: flex; flex-direction: column; align-items: center;">
 	{#each imageUrls as img (img)}
-		<img src={img} alt={getAltText(img)} width="100%" style="padding-top:15px" />
+		<img
+			src={img}
+			alt={getAltText(img)}
+			width="100%"
+			style="margin-top:15px; border: 2px solid #635537;
+"
+		/>
 	{/each}
 	<div style="margin-top: 0.5em;">
 		<a href={null} onclick={() => updateCurrentPage('news')}>Back to home</a>
