@@ -6,4 +6,5 @@ export function getCurrentPage(): string {
 
 export function updateCurrentPage(newPage: string) {
 	currentPage = newPage;
+	document.getElementById('main')?.scrollIntoView({ behavior: 'smooth' });
 }

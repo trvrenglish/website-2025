@@ -17,7 +17,7 @@
 				{#if navLink.url}
 					<a href={navLink.url}>{navLink.title}</a>
 				{:else if navLink.page}
-					<a href="#main" onclick={() => updateCurrentPage(navLink.page!)}>{navLink.title}</a>
+					<a href={null} onclick={() => updateCurrentPage(navLink.page!)}>{navLink.title}</a>
 				{/if}
 			</li>
 		{/each}
