@@ -21,6 +21,11 @@
 							>Marinated Lamb Chops with Mint Pomegranate Chicken</a
 						>
 					</p>
+					<p>
+						<a href="https://spicedblog.com/lobster-linguine-lemon-garlic-sauce/"
+							>Lobster Linguine with Lemon Garlic Sauce</a
+						>
+					</p>
 				</td><td style="padding-left: 1em; text-align: right; vertical-align: top;">
 					<img width="50" height="50" src="/icons/chicken.gif" alt="An evil chicken" />
 				</td></tr

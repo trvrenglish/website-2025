@@ -17,6 +17,10 @@
 						Caedon Spilman is an incredibly talented graphic designer and a true friend of mine.
 					</p>
 					<p>
+						<a href="https://www.bayansurf.club/">bayansurf.club</a>
+					</p>
+					<p>Bayan Surf Club is the multi-disciplinary creative studio of D.J. Javier.</p>
+					<p>
 						<a href="https://nnimsstudios.com/">nnimsstudios.com</a>
 					</p>
 					<p>
