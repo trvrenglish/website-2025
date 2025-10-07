@@ -13,6 +13,10 @@
 	let currentPage = $derived(getCurrentPage());
 </script>
 
+<svelte:head>
+	<title>{currentPage.toUpperCase()} | trvrenglish.com</title>
+</svelte:head>
+
 <div class="left">
 	{#each navItems as navItem (navItem.id)}
 		<NavItem {navItem}></NavItem>
@@ -43,7 +47,7 @@
 		<div class="narrowscroll-bgimg">
 			<div class="narrowscroll-content">
 				<dl class="news scroll">
-					{#if currentPage === 'news'}
+					{#if currentPage === 'home'}
 						<dt style="text-align: center;">
 							<img src="layout/recent-news.gif" alt="Recent News" />
 						</dt>

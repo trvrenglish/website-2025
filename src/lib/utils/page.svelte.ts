@@ -1,7 +1,7 @@
-let currentPage = $state('news');
+let currentPage = $state('home');
 
 if (typeof window !== 'undefined') {
-	const path = window.location.pathname.slice(1) || 'news';
+	const path = window.location.pathname.slice(1) || 'home';
 	currentPage = path;
 }
 
@@ -19,7 +19,7 @@ export function updateCurrentPage(newPage: string) {
 
 if (typeof window !== 'undefined') {
 	window.addEventListener('popstate', () => {
-		const path = window.location.pathname.slice(1) || 'news';
+		const path = window.location.pathname.slice(1) || 'home';
 		currentPage = path;
 	});
 }

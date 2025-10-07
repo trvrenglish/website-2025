@@ -25,6 +25,6 @@
 		>
 	</table>
 	<div style="margin-top: 0.5em;">
-		<a href={null} onclick={() => updateCurrentPage('news')}>Back to home</a>
+		<a href={null} onclick={() => updateCurrentPage('home')}>Back to home</a>
 	</div>
 </dd>

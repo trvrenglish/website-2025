@@ -2,7 +2,7 @@
 	import { updateCurrentPage } from '$lib/utils/page.svelte';
 </script>
 
-<a href={null} onclick={() => updateCurrentPage('news')}>
+<a href={null} onclick={() => updateCurrentPage('home')}>
 	<header class="banner">
 		<div class="banner__options">
 			<h1 class="banner__title">trvrenglish.com</h1>
