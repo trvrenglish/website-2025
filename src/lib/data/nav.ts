@@ -45,6 +45,12 @@ export const navItems: NavItem[] = [
 			},
 			{
 				id: 2,
+				title: 'Projects',
+				icon: '/icons/task.gif',
+				url: 'https://github.com/trvrenglish'
+			},
+			{
+				id: 3,
 				title: 'Contact',
 				icon: '/icons/email.gif',
 				page: 'contact'
