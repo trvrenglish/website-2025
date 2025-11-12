@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { NewsItem } from '$lib/interfaces/news';
+	import { updateCurrentPage } from '$lib/utils/page.svelte';
 
 	interface Props {
 		newsItem: NewsItem;
@@ -22,7 +23,11 @@
 			></tbody
 		>
 	</table>
-	<div style="margin-top: 0.5em;">
-		<a href={newsItem.url}>{newsItem.ctaText}</a>
+	<div style="margin-bottom: .5em;">
+		{#if newsItem.url}
+			<a href={newsItem.url}>{newsItem.ctaText}</a>
+		{:else if newsItem.page}
+			<a href={null} onclick={() => updateCurrentPage(newsItem.page!)}>{newsItem.ctaText}</a>
+		{/if}
 	</div>
 </dd>

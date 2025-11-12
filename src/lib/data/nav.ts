@@ -59,14 +59,14 @@ export const navItems: NavItem[] = [
 	},
 	{
 		id: 3,
-		title: 'Articles',
+		title: 'Blog',
 		icon: '/icons/scroll1.gif',
 		links: [
 			{
 				id: 1,
-				title: 'None yet!',
-				icon: '/icons/questionmark.gif',
-				url: '/'
+				title: 'SB Half 2025',
+				icon: '/icons/book.gif',
+				page: 'sb-half-2025'
 			}
 		]
 	},

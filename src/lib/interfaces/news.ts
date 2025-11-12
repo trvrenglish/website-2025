@@ -5,6 +5,7 @@ export interface NewsItem {
 	icon: string;
 	iconAlt: string;
 	text: string;
-	url: string;
+	url?: string;
+	page?: string;
 	ctaText: string;
 }

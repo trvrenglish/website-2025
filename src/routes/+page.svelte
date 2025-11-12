@@ -10,6 +10,7 @@
 	import Recipes from '../lib/components/Recipes.svelte';
 	import Skills from '../lib/components/Skills.svelte';
 	import { onMount } from 'svelte';
+	import SBHalf2025 from '$lib/components/SBHalf2025.svelte';
 
 	let currentPage = $derived(getCurrentPage());
 	let scrollOffset = $derived(0);
@@ -85,6 +86,8 @@
 						<Photography />
 					{:else if currentPage === 'recipes'}
 						<Recipes />
+					{:else if currentPage === 'sb-half-2025'}
+						<SBHalf2025 />
 					{/if}
 					<!-- <dt><span class="newsdate">23-May-2025</span>I made a website. Yipee!</dt> -->
 					<!-- <dd> -->
