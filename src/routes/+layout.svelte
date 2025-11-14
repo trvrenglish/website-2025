@@ -6,7 +6,10 @@
 
 	let { children } = $props();
 
-	const images = import.meta.glob('/static/photo/*.jpeg', { as: 'url', eager: true });
+	const images = import.meta.glob('/static/photo/**/*.{jpeg, jpg, png, JPG, JPEG, PNG}', {
+		as: 'url',
+		eager: true
+	});
 	const imageUrls = Object.values(images).map((url) => url.replace('/static/', '/'));
 </script>
 
