@@ -8,24 +8,30 @@ export const navItems: NavItem[] = [
 		links: [
 			{
 				id: 1,
+				title: 'Third Window Brewing Co.',
+				icon: '/icons/brewery.gif',
+				url: 'https://thirdwindowbrewing.com'
+			},
+			{
+				id: 2,
 				title: 'DialRight',
 				icon: '/icons/signal.gif',
 				url: 'https://calleridreputation.com/dialright/'
 			},
 			{
-				id: 2,
+				id: 3,
 				title: 'Westmont College',
 				icon: '/icons/shield.gif',
 				url: 'https://www.westmont.edu/'
 			},
 			{
-				id: 3,
+				id: 4,
 				title: 'Ojai Plant Works',
 				icon: '/icons/tree.gif',
 				url: 'https://www.ojaiplantworks.com/'
 			},
 			{
-				id: 4,
+				id: 5,
 				title: 'Santa Barbara Track Club',
 				icon: '/icons/whistle.gif',
 				url: 'https://www.santabarbaratc.com/'

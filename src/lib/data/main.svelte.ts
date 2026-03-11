@@ -2,11 +2,21 @@ import type { NewsItem } from '$lib/interfaces/news';
 
 export const newsItems: NewsItem[] = $state([
 	{
+		id: 3,
+		title: 'New Website for Third Window!',
+		date: '02-12-2026',
+		icon: '/icons/drinker.gif',
+		iconAlt: 'Drinking dude icon from OSRS',
+		text: "I am most honored & graced to collaborate with my friends @ Third Window Brewing Co. in crafting their new website. If you haven't had their smashburger yet, what are you waiting for?",
+		url: 'https://thirdwindowbrewing.com',
+		ctaText: "Check out Third Window's website"
+	},
+	{
 		id: 2,
 		title: 'SB Half Marathon 2025',
 		date: '11-09-2025',
 		icon: '/icons/jog.gif',
-		iconAlt: 'Scroll icon from OSRS',
+		iconAlt: 'Jogging dude icon from OSRS',
 		text: "Ran my fourth half-marathon in Santa Barbara on Sunday. Here's some photos I took...",
 		page: 'sb-half-2025',
 		ctaText: 'Read Post'
